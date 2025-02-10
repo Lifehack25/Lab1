@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta name="author" content="Pontus d'Orsay the one and only"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio - Min CV-sida</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="print.css" media="print" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="page-wrapper">
+
+    <!-- ========= TOP NAVIGATION ========== -->
+    <header class="top-nav">
+      <div class="nav-wrapper">
+        <div class="site-title"></div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Hem</a></li>
+            <li><a href="cv.html">Tidslinje</a></li>
+            <li><a href="portfolio.html" class="active">Portfolio</a></li>
+            <li><a href="about.html">Om mig</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ========= MAIN CONTENT ========== -->
+    <main>
+      <section class="portfolio-section">
+        <h1>Portfolio</h1>
+        <p id="portfolio-beskrivning">Här är några av mina projekt:</p>
+
+        <!-- Drinkly -->
+        <a href="#modal1" class="card-link">
+          <div class="card1">
+            <img src="Bilder/drinkly.png" alt="Drinkly" />
+            <div class="card1-content">
+              <h2 class="card1-title">Drinkly</h2>
+              <p class="card1-description">
+                Den perfekta appen för att krydda till kvällen med vännerna. 
+                Välj, blanda och spela flera dryckesspel samtidigt.
+              </p>
+            </div>
+          </div>
+        </a>
+
+        <!-- Memory Locks -->
+        <a href="#modal2" class="card-link">
+          <div class="card1">
+            <img src="Bilder/ml2.webp" alt="Memory Locks" />
+            <div class="card1-content">
+              <h2 class="card1-title">Memory Locks (Kommer snart!)</h2>
+              <p class="card1-description">
+                Spara minnen i ett lås och försegla dem för alltid. 
+                En digital tidskapsel för dina bästa minnen.
+              </p>
+            </div>
+          </div>
+        </a>
+      </section>
+    </main>
+
+    <!-- ========= FOOTER ========== -->
+    <footer>
+      <p>© 2025 Ditt Namn</p>
+      <div id="secret-trigger">Klicka här för en överraskning!</div>
+    </footer>
+  </div>
+
+  <!-- Drinkly Modal -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h2>Mer om Drinkly</h2>
+      <p>
+        Bästa drickleksappen för att krydda till kvällen med vännerna.
+        <br><br>
+        <a href="https://drinkly.app/" target="_blank">Besök Drinkly</a>
+      </p>
+      <a href="#" class="modal-close">Stäng</a>
+    </div>
+  </div>
+
+  <!-- Memory Locks Modal -->
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <h2>Mer om Memory Locks</h2>
+      <p>
+        Memory Locks är en digital tidskapsel för dina bästa minnen.
+        <br><br>
+        <a href="https://exempel.se/memorylocks" target="_blank">
+          Memory Locks Hemsida
+        </a>
+      </p>
+      <a href="#" class="modal-close">Stäng</a>
+    </div>
+  </div>
+
+</body>
+</html>
